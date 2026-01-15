@@ -2,7 +2,10 @@
   "name": "yoozek-claude-code",
   "version": "2.0.0",
   "description": "Yoozek's Claude Code setup with 14 productivity commands and 11 specialized AI agents for .NET 10 and React development with PostgreSQL",
-  "author": "Yoozek",
+  "author": {
+    "name": "Yoozek",
+    "email": "[email protected]"
+  },
   "license": "MIT",
   "commands": [
     {
@@ -144,16 +147,5 @@
       "args": ["@playwright/mcp@latest"],
       "description": "Browser automation and web testing capabilities"
     }
-  },
-  "tags": [
-    "productivity",
-    "dotnet",
-    "csharp",
-    "aspnet",
-    "react",
-    "entityframework",
-    "webapi",
-    "development",
-    "mcp"
-  ]
+  }
 }

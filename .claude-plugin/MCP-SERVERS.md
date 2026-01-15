@@ -1,0 +1,88 @@
+# MCP Servers Included
+
+This plugin includes 2 pre-configured MCP servers that enhance Claude Code's capabilities for .NET and React development.
+
+## Included Servers
+
+### 1. **Context7** (`@upstash/context7-mcp`)
+**Purpose**: Access up-to-date, version-specific documentation for any library
+
+**Usage**: Just mention "use context7" in your prompt when you need current library documentation
+
+**Benefits**:
+- Always up-to-date docs
+- Version-specific information
+- Works with thousands of libraries (.NET, React, npm packages)
+- No manual searching required
+
+**Example Usage**:
+- "Use context7 to show me Entity Framework Core 9 documentation"
+- "Use context7 for React Router v6 examples"
+- "Use context7 for ASP.NET Core authentication"
+
+### 2. **Playwright** (`@playwright/mcp`)
+**Purpose**: Browser automation and web testing
+
+**Capabilities**:
+- Navigate websites
+- Take screenshots
+- Interact with web elements
+- Generate test code
+- Access accessibility trees
+
+**Use Cases**:
+- E2E testing for React frontend
+- Web scraping
+- Browser automation
+- Visual testing
+- Testing Web API responses in browser
+
+## Using MCP Servers
+
+After installing this plugin:
+
+1. **Automatic Activation**: MCP servers start automatically when you use the plugin
+2. **Restart Required**: Restart Claude Code after plugin installation
+3. **Tool Access**: MCP tools appear in Claude's available tools list
+
+## Adding More MCP Servers
+
+You can add custom MCP servers to your local `.claude/.mcp.json`:
+
+```json
+{
+  "server-name": {
+    "command": "npx",
+    "args": ["-y", "package-name"],
+    "env": {
+      "API_KEY": "your-key"
+    }
+  }
+}
+```
+
+## Recommended Additional MCP Servers for .NET Development
+
+While not included by default, consider adding:
+
+- **GitHub MCP** - For repository operations and CI/CD
+- **Database MCP** - For direct SQL Server/PostgreSQL access
+- **Azure MCP** - If deploying to Azure
+
+## Troubleshooting
+
+**MCP servers not loading?**
+1. Restart Claude Code
+2. Check that npm/npx is installed
+3. Verify network connection (MCP servers download on first use)
+
+**Performance issues?**
+- MCP servers run on-demand
+- First use may be slower (package download)
+- Subsequent uses are fast
+
+## Learn More
+
+- Official MCP Documentation: https://modelcontextprotocol.io
+- Claude Code MCP Guide: https://docs.claude.com/en/docs/claude-code/mcp
+- MCP Server Directory: https://mcpcat.io

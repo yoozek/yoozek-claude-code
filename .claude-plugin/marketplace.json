@@ -1,0 +1,21 @@
+{
+  "name": "yoozek-claude-code",
+  "owner": {
+    "name": "Yoozek",
+    "contact": "github.com/yoozek"
+  },
+  "description": "Yoozek's curated Claude Code setup for .NET 10, React, and PostgreSQL development",
+  "plugins": [
+    {
+      "name": "yoozek-claude-code",
+      "source": "./",
+      "description": "Claude Code configuration with 14 productivity commands and 11 specialized AI agents for .NET 10, React, and PostgreSQL development with Testcontainers",
+      "version": "2.0.0",
+      "author": {
+        "name": "Yoozek",
+        "email": "[email protected]"
+      },
+      "tags": ["productivity", "dotnet", "csharp", "aspnet", "react", "postgresql", "entityframework", "testcontainers", "development"]
+    }
+  ]
+}

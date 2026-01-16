@@ -6,7 +6,6 @@
     "name": "Yoozek",
     "email": "[email protected]"
   },
-  "license": "MIT",
   "commands": [
     {
       "name": "new-task",
